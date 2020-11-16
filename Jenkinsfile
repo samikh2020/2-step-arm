@@ -1,5 +1,9 @@
 pipeline {
-    agent { dockerfile true}
+    agent {    dockerfile {
+        filename 'Dockerfile'
+        dir './'
+        label 'python-docker'
+    }
 
     stages {
         stage('checkout') {
