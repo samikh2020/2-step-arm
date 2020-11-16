@@ -3,7 +3,7 @@ pipeline {
         filename 'Dockerfile'
         dir './'
         label 'python-docker'
-    }
+    }}
 
     stages {
         stage('checkout') {
